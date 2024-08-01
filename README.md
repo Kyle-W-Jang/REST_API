@@ -95,9 +95,10 @@ curl http://localhost:8080/actuator/health
 
 
 7. If I had more time I would develop followings:
---> Find Orders by using different parameters other than Order_ID. 
-For Example: Date, Currecny_Code, and return the orders either in an ASC. or DESC. order of Amount/Price or TimeStamp
+--> Authenticate End-Ponts: POST/PUT-API using Spring Security such as HTTP Basic, form-based login, OAuth2, and JWT.
+--> Implement a simple rate limiting and request throttling to handle high traffic.
+--> Implement a cache system that stores recently created or modified order.
+--> Implement search functionality to enable users to search for orders based on keywords. [ex: Find Orders by using different parameters other than Order_ID. or  text indexing for high performance] For Example: Date, Currecny_Code, and return the orders either in an ASC. or DESC. order of Amount/Price or TimeStamp
 --> Implemente monitoring, and alerting system using Spring Boot Actuator and Prometheus 
 --> Have option to create/update multiple orders
---> Implemente authentication systems in Spring using Spring Security such as HTTP Basic, form-based login, OAuth2, and JWT.
---> More complex Implementation of custom exception using HttpServletRequest
+--> Stroing User Information securely (ex: Password encoding using Spring Security)
